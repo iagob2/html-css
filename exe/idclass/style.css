@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: #49EB72;
+}
+
+h1#principal{
+    text-align: center;
+    background-color:#a8e682 ;
+    color:#3b3b12 ;
+}
+
+.secundaria{
+    text-align:left;
+    background-color:#86DE50 ;
+
+}
+
+.terciaria{
+    text-align:left;
+    background-color:#C8F54C;
+
+}

@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root {
+    --cor01:#c5ebd6;
+    --cor02:#83e1ad;
+    --cor03:#3ddc84;
+    --cor04:#2fa866;
+    --cor05:#1a5c37;
+    --cor06:#063d;
+
+    --fonte-padrao: arial ,verdana,helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-android: 'Android'; 
+
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body { 
+    background-color:var(--cor02) ;
+    font-family: var(--fonte-padrao);
+}
+
+h1 { 
+    color:var(--cor05);
+    font-weight: bolder;
+    font-size: 40px ;
+    margin-top: 10px;
+
+}
+
+h2 { 
+    font-size: 20px;
+    background-image:linear-gradient(to right ,#79ecab,#FBFEFC);
+    color: #164e2f;
+    
+}
+
+a.linktext { 
+    color: #0c6b35;
+    text-decoration: none;
+}
+
+a.linktext:hover { 
+    text-decoration: underline;
+
+}
+img#imagen{ 
+    width: 50%;
+    height: 50%;
+    
+}
+
+img.img { 
+    width:98% ;
+    height :auto;
+}
+
+
+
+header { 
+    background-image: linear-gradient( to top ,#1c663d,#21a85c,#19e675);
+    padding-top: 20px;
+    box-shadow: 1px 1px 10px black;
+    font-family: var(--fonte-destaque);
+
+    
+}
+header> h1  { 
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-android);
+}
+header > p { 
+    text-align: center;
+    color: white;
+}
+nav {
+    background-color: var(--cor05);
+}
+nav > a { 
+    color: white;
+    text-decoration: none;
+    margin-left: 20px ;
+}
+nav > a:hover { 
+    text-decoration: underline;
+
+}
+
+main { 
+    padding: 0px 20px 20px 20px;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    text-align: justify;
+    box-shadow: 1px 1px 5px rgb(66, 66, 66);
+}
+
+#segunda { 
+    
+    background-color: #0c6b35;
+    width: 708px;
+    height: 325px;
+    margin-left: -20px;
+}
+
+#segunda > div { 
+    text-align: center;
+}
+
+#terceira > article { 
+    background-color: #C5EBD6;
+    text-align: justify;
+    padding: 15px;
+    margin: 10px -8px 10px -8px;
+    border-radius: 8px ;
+}
+
+#terceira > article > aside {
+    background-color: #2FA866;
+    padding: 5px ;
+    margin: -15px -15px 0px -15px ;
+    border-radius: 8px 8px 0px 0px ;
+    color: white;
+}
+
+ul {
+    list-style-type: symbod();
+
+}
+
+footer { 
+    width: 100%;
+    height: 20px;
+    background-color: #1A5C38;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-bottom: -10px ;
+    margin-left: -10px;
+}

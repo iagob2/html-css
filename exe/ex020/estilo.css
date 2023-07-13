@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.prime {
+    background-color: rgb(98, 98, 197);
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.prime > p {
+    display: none;
+}
+
+.prime:hover > h4 {
+    display:none
+}
+
+.prime:hover > p {
+    display: block;
+    color: black;
+    
+}
