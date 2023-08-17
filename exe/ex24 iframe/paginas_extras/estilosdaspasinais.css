@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+iframe { 
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 400px;
+}
+div { 
+    display: flex;
+    justify-content: center;
+    margin-top:50px ;
+}
