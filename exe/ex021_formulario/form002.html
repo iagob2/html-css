@@ -9,12 +9,14 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="Iusuario">Usuario:</label>
-            <input type="text" name="usuario" id="Iusuario" minlength="4" placeholder="nome do usuaro" autocomplete="name">
+            <input type="text" name="usuario" id="Iusuario" minlength="4" placeholder="nome do usuaro" autocomplete="name"
+            required>
         </p>
         <p>
             <label for="Isenha">Senha:</label>
             <input type="password" name="senha" id="Isenha" minlength="8"
-            maxlength="20" >
+            maxlength="20" placeholder="senha" >
+            <input type="submit" value="click" required>
         </p>
     </form>
     
