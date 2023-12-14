@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <h1>Soma</h1>
+        <p>
+            <label for="in1">Numero 01 :</label>
+            <input type="number" name="n1" id="in1" min="0"  required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Numero 02 :</label>
+            <input type="number" name="n2" id="in2" min="0"  required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <label for="isoma">resultado:</label>
+        <output id="isoma">0</output>
+
+        <h1>Multiplicação</h1>
+        <p>
+            <label for="in3">Numero 03 :</label>
+            <input type="number" name="n3" id="in3" min="0"  required oninput="imul.innerHTML = Number(in3.value) * Number(in4.value)">
+        </p>
+
+        <p>
+            <label for="in4">Numero 04 :</label>
+            <input type="number" name="n4" id="in4" min="0"  required oninput="imul.innerHTML = Number(in3.value) * Number(in4.value)">
+        </p>
+
+        <label for="imul">resultado:</label>
+        <output id="imul">0</output>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
