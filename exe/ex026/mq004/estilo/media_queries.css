@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*todas as demais medias*/
+/*typical device breakpoints
+Smartphones:
+
+Retrato (vertical): 320px a 767px
+Paisagem (horizontal): 480px a 767px
+Tablets:
+
+Retrato (vertical): 768px a 991px
+Paisagem (horizontal): 768px a 1023px
+Laptops e Desktops:
+
+Pequenos laptops: 992px a 1199px
+Laptops e desktops padrão: 1200px ou mais */
+
+/* Estilos padrão para todos os tamanhos de tela */
+
+/* Smartphones (Retrato e Paisagem) */
+/*@media only screen and (min-width: 320px) and (max-width: 767px) {
+    /* Estilos específicos para smartphones} */
+  
+@media only print { 
+
+     
+
+ main h1 { 
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: black;
+  }
+    
+ 
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+    h1::after{ content: 'PRINT';}
+
+
+}
+  
+  /* Tablets (Retrato e Paisagem) */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    /* Estilos específicos para tablets */
+
+    body{
+        background: black url(../imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+    h1::after{ content: 'TABLE';}
+   }
+  
+  
+  /* Laptops e Desktops (Pequenos laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Estilos específicos para laptops de tamanho médio */
+    body{
+        background: black url(../imagens/icon-pc.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+
+    h1::after{ content: 'PC';}
+
+    
+  }
+  
+  /* Laptops e Desktops (Laptops e desktops padrão) */
+@media only screen and (min-width: 1200px) {
+    /* Estilos específicos para laptops e desktops grandes */
+    body{
+        background: black url(../imagens/back-tv.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+    h1::after{ content: 'Tv';}
+
+  }
+  
